@@ -6,7 +6,7 @@
   <link href="https://1kunn.github.io/atom.xml" rel="self"/>
   
   <link href="https://1kunn.github.io/"/>
-  <updated>2024-07-21T01:22:20.348Z</updated>
+  <updated>2024-07-22T13:19:05.965Z</updated>
   <id>https://1kunn.github.io/</id>
   
   <author>
@@ -17,13 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>小土堆pytorch</title>
+    <link href="https://1kunn.github.io/2024/07/22/%E5%B0%8F%E5%9C%9F%E5%A0%86pytorch/"/>
+    <id>https://1kunn.github.io/2024/07/22/%E5%B0%8F%E5%9C%9F%E5%A0%86pytorch/</id>
+    <published>2024-07-22T12:18:28.000Z</published>
+    <updated>2024-07-22T13:19:05.965Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><h2 id="视频链接："><a href="#视频链接：" class="headerlink" title="视频链接："></a>视频链接：</h2><p><a href="https://www.bilibili.com/video/BV1hE411t7RN/?p=8&spm_id_from=333.880.my_history.page.click&vd_source=49378ece86ab83ee76bcaac1cc96562c">https://www.bilibili.com/video/BV1hE411t7RN/?p=8&amp;spm_id_from=333.880.my_history.page.click&amp;vd_source=49378ece86ab83ee76bcaac1cc96562c</a></p><p>其他代码 数据集等链接在视频详情页</p><p>2024.7.20实测仍能使用</p><h1 id="TensorBoard的使用（一）"><a href="#TensorBoard的使用（一）" class="headerlink" title="TensorBoard的使用（一）"></a>TensorBoard的使用（一）</h1><ul><li><p>python3.6环境</p></li><li><p>代码（仅仅是构建的框架 构建y&#x3D;x的图）</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> torch.utils.tensorboard <span class="keyword">import</span> SummaryWriter</span><br><span class="line"><span class="comment">#引入summarywriter工具 按住ctrl可以查看包的说明</span></span><br><span class="line"></span><br><span class="line">writer = SummaryWriter(<span class="string">&#x27;logs&#x27;</span>) <span class="comment">#指的是对应内容存储到logs文件夹下</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># writer.add_image()</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>):</span><br><span class="line">    writer.add_scalar(<span class="string">&#x27;y=x&#x27;</span>, i, i) <span class="comment">#参数分别是 标题 y轴 x轴</span></span><br><span class="line"></span><br><span class="line">writer.close()</span><br></pre></td></tr></table></figure></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tensorboard --logdir=learn/logs --port=<span class="number">6007</span> <span class="comment">#控制台打开在6007端口处 环境要安装tensorboard  learn/logs是文件的相对路径</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;链接&quot;&gt;&lt;a href=&quot;#链接&quot; class=&quot;headerlink&quot; title=&quot;链接&quot;&gt;&lt;/a&gt;链接&lt;/h1&gt;&lt;h2 id=&quot;视频链接：&quot;&gt;&lt;a href=&quot;#视频链接：&quot; class=&quot;headerlink&quot; title=&quot;视频链接：&quot;&gt;&lt;/a&gt;视频链接</summary>
+      
+    
+    
+    
+    
+    <category term="学习记录" scheme="https://1kunn.github.io/tags/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>学习Typora</title>
     <link href="https://1kunn.github.io/2024/07/21/%E5%AD%A6%E4%B9%A0Typora/"/>
     <id>https://1kunn.github.io/2024/07/21/%E5%AD%A6%E4%B9%A0Typora/</id>
     <published>2024-07-21T01:00:08.000Z</published>
-    <updated>2024-07-21T01:22:20.348Z</updated>
+    <updated>2024-07-22T12:17:34.049Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Typora语法"><a href="#Typora语法" class="headerlink" title="Typora语法"></a>Typora语法</h1><p>#就是一级标题</p><p>##二级标题，以此类推</p><h1 id="行间公式"><a href="#行间公式" class="headerlink" title="行间公式"></a>行间公式</h1><p> 输入$$然后按回车<br>$$<br>F&#x3D;ma<br>$$</p><h1 id="列表生成"><a href="#列表生成" class="headerlink" title="列表生成"></a>列表生成</h1><p>-（横杠）和一个空格 </p><h2 id=""><a href="#" class="headerlink" title="- "></a>- </h2><p>数字和点和空格就是有序列表</p><p>1. </p><h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h2><p>$$</p><p>$$</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Typora语法"><a href="#Typora语法" class="headerlink" title="Typora语法"></a>Typora语法</h1><p>#就是一级标题</p><p>##二级标题，以此类推</p><h1 id="行间公式"><a href="#行间公式" class="headerlink" title="行间公式"></a>行间公式</h1><p> 输入$$然后按回车<br>$$<br>F&#x3D;ma<br>$$</p><h1 id="列表生成"><a href="#列表生成" class="headerlink" title="列表生成"></a>列表生成</h1><p>-（横杠）和一个空格 </p><h2 id=""><a href="#" class="headerlink" title="- "></a>- </h2><p>数字和点和空格就是有序列表</p><p>1. </p><h1 id="插入代码块"><a href="#插入代码块" class="headerlink" title="插入代码块"></a>插入代码块</h1><p>3个反引号+回车</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> rang(<span class="number">5</span>):</span><br></pre></td></tr></table></figure><h1 id="插入图片-表格-都在上面格式里"><a href="#插入图片-表格-都在上面格式里" class="headerlink" title="插入图片 表格 都在上面格式里"></a>插入图片 表格 都在上面格式里</h1><h1 id="文本格式"><a href="#文本格式" class="headerlink" title="文本格式"></a>文本格式</h1><p>左右都加</p><p>加粗是两个*</p><p><strong>加粗</strong></p><p>斜体是一个*</p><p><em>斜体</em></p><p>下划线 ctrl+u</p><p><u>下划线</u></p>]]></content>
     
     
       
