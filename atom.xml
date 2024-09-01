@@ -6,7 +6,7 @@
   <link href="https://1kunn.github.io/atom.xml" rel="self"/>
   
   <link href="https://1kunn.github.io/"/>
-  <updated>2024-08-23T02:55:23.021Z</updated>
+  <updated>2024-09-01T13:22:54.758Z</updated>
   <id>https://1kunn.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>复现-unet2</title>
+    <link href="https://1kunn.github.io/2024/09/01/%E5%A4%8D%E7%8E%B0-unet2/"/>
+    <id>https://1kunn.github.io/2024/09/01/%E5%A4%8D%E7%8E%B0-unet2/</id>
+    <published>2024-09-01T06:48:44.000Z</published>
+    <updated>2024-09-01T13:22:54.758Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Github代码复现2"><a href="#Github代码复现2" class="headerlink" title="Github代码复现2"></a>Github代码复现2</h1><h2 id="前置内容"><a href="#前置内容" class="headerlink" title="前置内容"></a>前置内容</h2><p>视频教程：<a href="https://www.bilibili.com/video/BV1uW421d72j/?spm_id_from=333.880.my_history.page.click&vd_source=49378ece86ab83ee76bcaac1cc96562c">https://www.bilibili.com/video/BV1uW421d72j/?spm_id_from=333.880.my_history.page.click&amp;vd_source=49378ece86ab83ee76bcaac1cc96562c</a></p><p>Github地址：<a href="https://github.com/4uiiurz1/pytorch-nested-unet">https://github.com/4uiiurz1/pytorch-nested-unet</a></p><p>数据集地址：<a href="https://www.kaggle.com/c/data-science-bowl-2018/data">https://www.kaggle.com/c/data-science-bowl-2018/data</a></p><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>代码因为是2018年的，所以有些包不适合版本，甚至是作者给出的版本也会出bug。</p><p>本次使用stage1_train数据集</p><h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><p>python&#x3D;3.9</p><p>PyTorch&#x3D;conda install pytorch&#x3D;&#x3D;2.0.0 torchvision&#x3D;&#x3D;0.15.0 torchaudio&#x3D;&#x3D;2.0.0 pytorch-cuda&#x3D;11.8 -c pytorch -c nvidia</p><p>pip install -r requirements.txt</p><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><ol><li>下载代码</li></ol><p><img src="F:\Typora图\image-20240901210613867-17251959760353.png" alt="image-20240901210613867"></p><ol start="2"><li><p>打开<img src="F:\Typora图\image-20240901210811038.png" alt="image-20240901210811038"></p></li><li><p>环境搭建如上</p></li><li><p>数据集下载</p></li></ol><p><img src="F:\Typora图\image-20240901205852176-17251955341241.png" alt="image-20240901205852176"></p><p>数据集要按readme要求放置<img src="F:\Typora图\image-20240901211045505-17251962484367.png" alt="image-20240901211045505"></p><p><img src="F:\Typora图\image-20240901211123370-17251962869379.png" alt="image-20240901211123370"></p><ol start="5"><li><p>预处理数据</p><p>python preprocess_dsb2018.py</p><p><img src="F:\Typora图\image-20240901211008360-17251962121195.png" alt="image-20240901211008360"></p></li><li><p>预训练模型</p><p>python train.py –dataset dsb2018_96 –arch NestedUNet</p><p><img src="F:\Typora图\image-20240901211214406-172519633841011.png" alt="image-20240901211214406"></p></li><li><p>结果</p><p>运行结果会出现在models文件目录下</p><p><img src="F:\Typora图\image-20240901211333991-172519641557113.png" alt="image-20240901211333991"></p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Github代码复现2&quot;&gt;&lt;a href=&quot;#Github代码复现2&quot; class=&quot;headerlink&quot; title=&quot;Github代码复现2&quot;&gt;&lt;/a&gt;Github代码复现2&lt;/h1&gt;&lt;h2 id=&quot;前置内容&quot;&gt;&lt;a href=&quot;#前置内容&quot; class=&quot;</summary>
+      
+    
+    
+    
+    
+    <category term="代码复现" scheme="https://1kunn.github.io/tags/%E4%BB%A3%E7%A0%81%E5%A4%8D%E7%8E%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>复现_unet1</title>
